@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  background-image: url("../images/tom-barrett-hgGplX3PFBg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+body ::-webkit-input-placeholder, html ::-webkit-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+body ::-moz-placeholder, html ::-moz-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+body :-ms-input-placeholder, html :-ms-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+body ::-ms-input-placeholder, html ::-ms-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+body ::placeholder,
+html ::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+body .container,
+html .container {
+  width: 500px;
+  height: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.weather--header {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background: black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.weather--header h1 {
+  color: white;
+}
+
+.location--input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+.location--input input[type=text] {
+  width: 60%;
+  padding: 0.6rem;
+  margin-right: 0.6rem;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.808);
+}
+.location--input input[type=text] {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+.location--input button {
+  width: 25%;
+  outline: none;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  background: rgba(220, 241, 255, 0.808);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.location--input button:hover {
+  cursor: pointer;
+  color: white;
+  background: rgba(54, 173, 252, 0.808);
+}
+
+.weather--output {
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+.weather--output .main--weather--info {
+  text-align: center;
+}
+.weather--output .main--weather--info p.main {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.weather--output .weather--portion--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.weather--output .weather--portion--info .weather--characters {
+  background: #80c4f1;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 2px solid white;
+  padding-left: 50px;
+  line-height: 0.5;
+}
+.weather--output .weather--portion--info .weather--characters p.speed, .weather--output .weather--portion--info .weather--characters p.degrees {
+  color: white;
+  font-size: 1rem;
+}
+.weather--output .weather--portion--info .weather--location {
+  background: #80c4f1;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 2px solid white;
+  padding-left: 50px;
+  line-height: 0.5;
+}
+.weather--output .weather--portion--info .weather--location p.country, .weather--output .weather--portion--info .weather--location p.city {
+  color: white;
+  font-size: 1rem;
+}

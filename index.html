@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Weather News</title>
+ </head>
+ <body>
+  <!--[if lt IE 7]>
+   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+   <div class="weather--header">
+    <h1>Weather Reporter App.</h1>
+   </div>
+   <div class="location--input">
+    <input type="text" name="location" class="location" placeholder="Your Location">
+    <button class="search--btn">Search</button>
+   </div>
+   <div class="weather--output">
+    <div class="main--weather--info">
+     <div class="weather--condition">
+      <p class="weather">Rain</p>
+     </div>
+     <div class="weather--icon">
+      <img src="" alt="weather icon" class="weather--icon">
+     </div>
+     <div class="weather--description">
+      <p class="description">Light Rain.</p>
+     </div>
+     <div class="weather--station">
+      <p class="city--name">Kampala</p>
+     </div>
+    </div>
+    <div class="weather--portion--info">
+     <div class="weather--characters">
+      <div class="speed">
+       <p class="wind--speed">Wind Speed: 0.45</p>
+      </div>
+      <div class="wind--degrees">
+       <p class="degrees">Wind Degrees: 90 <span>&deg;C</span> </p>
+      </div>
+     </div>
+     <div class="weather--location">
+      <div class="country">
+       <p class="country">Country: UGANDA</p>
+      </div>
+      <div class="city--name">
+       <p class="city">City: Kampala</p> 
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  
+  <script src="./js/app.js" async defer></script>
+ </body>
+</html>

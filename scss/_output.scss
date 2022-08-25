@@ -1,0 +1,56 @@
+.weather--output {
+ padding: 0!important;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: left;
+
+ .main--weather--info {
+  text-align: center;
+
+  p.main {
+   font-weight: bolder;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+  }
+ }
+
+ .weather--portion--info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+
+  .weather--characters {
+   background: #80c4f1;
+   flex: 50%;
+   border: 2px solid white;
+   padding-left: 50px;
+   line-height: 0.5;
+
+   p.speed, p.degrees {
+    color: white;
+    font-size: 1rem;
+   }
+
+  }
+
+  .weather--location {
+   background: #80c4f1;
+   flex: 50%;
+   border: 2px solid white;
+   padding-left: 50px;
+   line-height: 0.5;
+
+   p.country, p.city {
+    color: white;
+    font-size: 1rem;
+   }
+
+  }
+
+ }
+
+}

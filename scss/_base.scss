@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+body,
+html {
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Quicksand', sans-serif;
+ background-image: url('../images/tom-barrett-hgGplX3PFBg-unsplash.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
+ object-fit: cover;
+ overflow: hidden;
+
+ ::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+ }
+
+ .container {
+  width: 500px;
+  height: auto;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+ }
+
+}

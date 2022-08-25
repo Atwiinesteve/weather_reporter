@@ -1,0 +1,36 @@
+.location--input {
+ width: 100%;
+ display: flex;
+ padding: 1rem;
+
+ input[type="text"] {
+  width: 60%;
+  padding: 0.6rem;
+  margin-right: 0.6rem;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.808);
+ }
+
+ input[type=text] {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+ }
+
+ button {
+  width: 25%;
+  outline: none;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  background: rgba(220, 241, 255, 0.808);
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+   cursor: pointer;
+   color: white;
+   background: rgba(54, 173, 252, 0.808);
+  }
+ }
+
+}
