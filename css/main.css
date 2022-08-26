@@ -50,7 +50,7 @@ html ::placeholder {
 }
 body .container,
 html .container {
-  width: 500px;
+  width: 900px;
   height: auto;
   -ms-flex-line-pack: center;
       align-content: center;
