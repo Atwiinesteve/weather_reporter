@@ -72,16 +72,21 @@ html .container {
 .weather--header h1 {
   color: white;
 }
+@media (max-width: 400px) {
+  .weather--header {
+    font-size: 0.5rem;
+  }
+}
 
 .location--input {
-  width: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
 }
 .location--input input[type=text] {
-  width: 60%;
+  width: 80%;
   padding: 0.6rem;
   margin-right: 0.6rem;
   outline: none;
@@ -96,9 +101,10 @@ html .container {
   width: 25%;
   outline: none;
   border: none;
+  color: #fff;
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
-  background: rgba(220, 241, 255, 0.808);
+  background: rgba(36, 151, 228, 0.808);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -149,6 +155,11 @@ html .container {
   text-transform: uppercase;
   line-height: 0;
 }
+@media (max-width: 400px) {
+  .weather--output .main--weather--info p.weather {
+    font-size: 1.5rem;
+  }
+}
 .weather--output .main--weather--info .weather--icon {
   line-height: 0;
 }
@@ -179,6 +190,21 @@ html .container {
   color: white;
   font-size: 1rem;
 }
+@media (max-width: 400px) {
+  .weather--output .weather--portion--info .weather--characters p {
+    font-size: 0.8rem;
+  }
+}
 .weather--output .weather--portion--info .weather--desc p {
   color: white;
+}
+@media (max-width: 400px) {
+  .weather--output .weather--portion--info .weather--desc {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .weather--output .weather--portion--info {
+    font-size: 0.8rem;
+  }
 }

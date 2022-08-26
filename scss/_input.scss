@@ -1,10 +1,10 @@
 .location--input {
- width: 100%;
+ width: auto;
  display: flex;
  padding: 1rem;
 
  input[type="text"] {
-  width: 60%;
+  width: 80%;
   padding: 0.6rem;
   margin-right: 0.6rem;
   outline: none;
@@ -21,9 +21,10 @@
   width: 25%;
   outline: none;
   border: none;
+  color: #fff;
   font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
-  background: rgba(220, 241, 255, 0.808);
+  background: rgba(36, 151, 228, 0.808);
   transition: all 0.4s ease-in-out;
 
   &:hover {
