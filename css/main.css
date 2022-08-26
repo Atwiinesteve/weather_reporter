@@ -128,10 +128,36 @@ html .container {
 .weather--output .main--weather--info {
   text-align: center;
 }
-.weather--output .main--weather--info p.main {
+.weather--output .main--weather--info .weather--station {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.weather--output .main--weather--info p.weather {
   font-weight: bolder;
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-transform: uppercase;
+  line-height: 0;
+}
+.weather--output .main--weather--info .weather--icon {
+  line-height: 0;
+}
+.weather--output .main--weather--info .weather--description,
+.weather--output .main--weather--info .weather--station {
+  line-height: 0;
+}
+.weather--output .main--weather--info .weather--description p {
+  text-transform: capitalize;
 }
 .weather--output .weather--portion--info {
   display: -webkit-box;
@@ -147,30 +173,12 @@ html .container {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  background: #5db4ee;
 }
-.weather--output .weather--portion--info .weather--characters {
-  background: #80c4f1;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  border: 2px solid white;
-  padding-left: 50px;
-  line-height: 0.5;
-}
-.weather--output .weather--portion--info .weather--characters p.speed, .weather--output .weather--portion--info .weather--characters p.degrees {
+.weather--output .weather--portion--info .weather--characters p {
   color: white;
   font-size: 1rem;
 }
-.weather--output .weather--portion--info .weather--location {
-  background: #80c4f1;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  border: 2px solid white;
-  padding-left: 50px;
-  line-height: 0.5;
-}
-.weather--output .weather--portion--info .weather--location p.country, .weather--output .weather--portion--info .weather--location p.city {
+.weather--output .weather--portion--info .weather--desc p {
   color: white;
-  font-size: 1rem;
 }
